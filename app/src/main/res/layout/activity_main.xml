@@ -12,31 +12,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="UselessParent">
 
-            <ImageView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:importantForAccessibility="no"
-                android:src="@drawable/logo_receta"/>
+            android:src="@drawable/logo_receta"/>
 
         <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:importantForAccessibility="no"
-                android:textColorHint="@color/azul"
-                android:textColor="@color/blanco"
-                android:textSize="20dp"
-                android:padding="18dp"
-                android:inputType="text"
-                android:id="@+id/correo_user"
-                android:layout_marginTop="32dp"
-                android:hint="@string/app_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:textColorHint="@color/azul"
+            android:textColor="@color/blanco"
+            android:textSize="20dp"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/correo_user"
+            android:layout_marginTop="32dp"
+            android:hint="@string/app_correo"
             android:background="@drawable/rounded_corner"
             />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,13 +48,55 @@
             android:padding="18dp"
             android:inputType="textPassword"
             android:id="@+id/password_user"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:hint="@string/app_password"
             android:background="@drawable/rounded_corner"
             />
 
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_login"
+                android:backgroundTint="@color/azul"
+                android:textColor="@color/blanco"
+                android:padding="18dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="32dp"
+                android:textSize="20dp"
+                android:id="@+id/login_user"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_register"
+                android:backgroundTint="@color/azul"
+                android:textColor="@color/blanco"
+                android:padding="18dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="32dp"
+                android:textSize="20dp"
+                android:id="@+id/register_user"/>
+
+        </LinearLayout>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_recover_password"
+            android:textColor="@color/azul"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/navigate_text"/>
     </LinearLayout>
 
 </RelativeLayout>
