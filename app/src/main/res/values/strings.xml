@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Sumativa</string>
+    <string name="app_correo">Email</string>
+    <string name="app_password">Password</string>
 </resources>
