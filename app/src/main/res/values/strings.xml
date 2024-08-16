@@ -2,6 +2,7 @@
     <string name="app_name">Sumativa</string>
     <string name="app_correo">Email</string>
     <string name="app_password">Password</string>
+    <string name="app_password_repeat">Repetir Password</string>
     <string name="app_login">Iniciar Sesion</string>
     <string name="app_register">Registrarse</string>
     <string name="app_recover_password">Recuperar Constraseña</string>

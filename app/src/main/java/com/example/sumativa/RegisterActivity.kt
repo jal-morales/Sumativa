@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
-    private  lateinit var registrarse_btn: Button
+class RegisterActivity : AppCompatActivity() {
+    private  lateinit var inicio_btn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
 
         // Configuración para manejar las barras de sistema
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -23,12 +23,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        registrarse_btn=findViewById(R.id.register_user)
+        inicio_btn=findViewById(R.id.inicio_App)
 
-        registrarse_btn.setOnClickListener {
-            val intent= Intent(this, RegisterActivity::class.java)
+        inicio_btn.setOnClickListener {
+            val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
